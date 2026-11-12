@@ -1074,6 +1074,42 @@ ul, ol {
   align-items: start;
 }
 
+.contact-links {
+  list-style: none;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.contact-links li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-cloud);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.contact-link-label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.contact-links a {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-navy);
+  word-break: break-word;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
 .form-group {
   margin-bottom: var(--space-4);
 }
