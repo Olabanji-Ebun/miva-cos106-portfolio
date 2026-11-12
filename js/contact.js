@@ -103,6 +103,9 @@ async function handleContactSubmit(event) {
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
 
+    const SEND_TIMEOUT_MS = 10000;
+    let timeoutId;
+
     try {
       const templateParams = {
         name,
@@ -112,11 +115,21 @@ async function handleContactSubmit(event) {
         time: new Date().toLocaleString()
       };
 
-      await emailjs.send(
-        EMAILJS_CONFIG.serviceId,
-        EMAILJS_CONFIG.templateId,
-        templateParams
-      );
+      const timeoutPromise = new Promise((_, reject) => {
+        timeoutId = setTimeout(() => {
+          reject(new Error("REQUEST_TIMEOUT"));
+        }, SEND_TIMEOUT_MS);
+      });
+
+      await Promise.race([
+        emailjs.send(
+          EMAILJS_CONFIG.serviceId,
+          EMAILJS_CONFIG.templateId,
+          templateParams
+        ),
+        timeoutPromise
+      ]);
+
       feedbackEl.hidden = false;
       feedbackEl.className = "form-feedback is-success";
       feedbackEl.textContent = `Your message has been sent, ${name}. Thank you for reaching out!`;
@@ -124,8 +137,12 @@ async function handleContactSubmit(event) {
     } catch (error) {
       feedbackEl.hidden = false;
       feedbackEl.className = "form-feedback is-error";
-      feedbackEl.textContent = "Unable to send your message right now. Please try again shortly.";
+      feedbackEl.textContent =
+        error.message === "REQUEST_TIMEOUT"
+          ? "Sending is taking longer than expected. Please check your connection or email me directly at ayooluwaebun28@gmail.com."
+          : "Unable to send your message right now. Please try again shortly.";
     } finally {
+      clearTimeout(timeoutId);
       submitBtn.disabled = false;
       submitBtn.textContent = "Send Message";
     }
