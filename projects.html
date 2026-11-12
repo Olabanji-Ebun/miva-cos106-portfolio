@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal web development projects by Ayooluwa 'Bukunmi Olabanji-Ebun.">
+  <title>Projects | Ayooluwa 'Bukunmi Olabanji-Ebun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html">
+        <span>Ayooluwa Olabanji-Ebun</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav id="primary-navigation" class="nav-menu" aria-label="Primary navigation" data-nav-menu>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About Me</a></li>
+          <li><a class="nav-link is-active" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a class="nav-link" href="planner.html">Academic Planner</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-banner">
+      <div class="container">
+        <span class="pill">02 / PROJECTS</span>
+        <h1>Personal Projects</h1>
+        <p>
+          Three web applications I built to practice responsive layouts, UI design, and plain JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          <article class="project-card animate-in">
+            <div class="project-thumb">
+              <img src="assets/images/project-1.jpg" alt="Screenshot of the FinTrack Personal Expense and Budget Tracker interface">
+            </div>
+            <div class="project-body">
+              <h2>FinTrack: Expense &amp; Budget Tracker</h2>
+              <p>
+                A personal finance dashboard for logging daily expenses, checking monthly spending by category,
+                and keeping budgets organized in one view.
+              </p>
+              <ul class="project-tags">
+                <li>HTML5</li>
+                <li>CSS Grid</li>
+                <li>Vanilla JS</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://github.com" target="_blank" rel="noopener noreferrer">Live Preview</a>
+                <a class="btn btn-secondary btn-sm" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-in delay-1">
+            <div class="project-thumb">
+              <img src="assets/images/project-2.jpg" alt="Screenshot of the FocusFlow Pomodoro Productivity Timer web app">
+            </div>
+            <div class="project-body">
+              <h2>FocusFlow: Pomodoro Timer</h2>
+              <p>
+                A 25-minute work timer with custom session labels, start/pause/reset buttons, and a daily
+                streak counter to help stay on track during study or coding blocks.
+              </p>
+              <ul class="project-tags">
+                <li>Semantic HTML</li>
+                <li>CSS Transitions</li>
+                <li>DOM Events</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://github.com" target="_blank" rel="noopener noreferrer">Live Preview</a>
+                <a class="btn btn-secondary btn-sm" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-in delay-2">
+            <div class="project-thumb">
+              <img src="assets/images/project-3.jpg" alt="Screenshot of the EventEase Event and Guest Planner application">
+            </div>
+            <div class="project-body">
+              <h2>EventEase: Event &amp; Guest Planner</h2>
+              <p>
+                An event planning app for organizing schedules, tracking guest RSVP statuses, and managing
+                event checklists on both mobile and desktop screens.
+              </p>
+              <ul class="project-tags">
+                <li>Flexbox</li>
+                <li>Media Queries</li>
+                <li>LocalStorage</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://github.com" target="_blank" rel="noopener noreferrer">Live Preview</a>
+                <a class="btn btn-secondary btn-sm" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Ayooluwa 'Bukunmi Olabanji-Ebun</p>
+          <p class="footer-sub">Software Engineering Portfolio &amp; Academic Planner</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year">2026</span> Ayooluwa 'Bukunmi Olabanji-Ebun</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
