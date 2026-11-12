@@ -1,4 +1,4 @@
-# Student Portfolio & Academic Management Website
+# Student Portfolio & Website
 
 A responsive, multi-page personal portfolio and academic planner built with **HTML5**, **CSS3**, and **Vanilla JavaScript** for the **COS 106 (Introduction to Web Technologies)** practical term project at **MIVA Open University**.
 
