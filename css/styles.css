@@ -1111,7 +1111,7 @@ ul, ol {
 }
 
 .form-group {
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-3);
 }
 
 .form-label {
@@ -1146,7 +1146,7 @@ ul, ol {
 }
 
 textarea.form-control {
-  min-height: 130px;
+  min-height: 105px;
   resize: vertical;
 }
 
@@ -1156,7 +1156,10 @@ textarea.form-control {
   font-size: 0.84rem;
   font-weight: 600;
   color: var(--color-error);
-  min-height: 1.2em;
+}
+
+.field-error:empty {
+  display: none;
 }
 
 .form-feedback {
