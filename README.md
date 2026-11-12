@@ -2,7 +2,7 @@
 
 A responsive, multi-page personal portfolio and academic planner built with **HTML5**, **CSS3**, and **Vanilla JavaScript** for the **COS 106 (Introduction to Web Technologies)** practical term project at **MIVA Open University**.
 
-- **Live Website:** [olabanji-ebun.github.io/miva-cos106-portfolio](https://olabanji-ebun.github.io/miva-cos106-portfolio/)
+- **Live Website:** [ayooluwa-miva-cos106-portfolio.vercel.app](https://ayooluwa-miva-cos106-portfolio.vercel.app/)
 - **Repository:** [github.com/Olabanji-Ebun/miva-cos106-portfolio](https://github.com/Olabanji-Ebun/miva-cos106-portfolio)
 
 ## Pages & Features
