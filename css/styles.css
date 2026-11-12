@@ -1329,11 +1329,28 @@ body.nav-open .site-footer {
   }
 
   .hero-section {
-    padding-block: var(--space-5) var(--space-6);
+    padding-block: var(--space-6);
+  }
+
+  .hero-grid {
+    gap: var(--space-5);
   }
 
   .portrait-card {
-    max-width: 260px;
+    max-width: 295px;
+  }
+
+  .pill {
+    font-size: 0.66rem;
+    letter-spacing: 0.02em;
+    padding: 0.34rem 0.72rem;
+    white-space: nowrap;
+  }
+
+  .hero-copy .pill {
+    display: table;
+    margin-inline: auto;
+    margin-bottom: var(--space-8);
   }
 
   .bento-grid,
