@@ -40,6 +40,7 @@ MivaPortfolio/
 └── assets/
     ├── images/
     │   ├── ebun.png
+    │   ├── favicon.svg
     │   ├── project-1.jpg
     │   ├── project-2.jpg
     │   └── project-3.jpg
