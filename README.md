@@ -12,6 +12,7 @@ A responsive, multi-page personal portfolio and academic planner built with **HT
 - **Projects (`projects.html`):** Three personal web projects (*FinTrack*, *FocusFlow*, and *EventEase*) with screenshots, descriptions, tech tags, and links.
 - **Academic Planner (`planner.html`):** Interactive task manager built with Vanilla JavaScript arrays, DOM manipulation, event delegation, and `localStorage` persistence. Users can add tasks with course codes and priorities, mark tasks as completed or pending, and delete tasks with live summary counters.
 - **Contact (`contact.html`):** Contact form with client-side validation (non-empty fields, valid email format, digits-only phone number) connected to **EmailJS** for live message delivery.
+- **Dark Mode & Light Mode:** Accessible theme switcher in the top navigation bar with persistent user preference in `localStorage`, automatic OS color-scheme matching (`matchMedia`), and zero-flicker `<head>` initialization across all 5 pages.
 
 ## Tech Stack
 
